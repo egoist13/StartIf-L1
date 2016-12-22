@@ -1,0 +1,16 @@
+#gallery {
+    max-width: 1024px;
+}
+
+.panel-body img {
+    width: 100%;
+}
+
+.navbar-header button {
+    margin-left: 50px;
+}
+
+.navbar-form {
+    padding: 2px;
+    margin-left: 20px;
+}
