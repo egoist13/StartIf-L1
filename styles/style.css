@@ -6,11 +6,7 @@
     width: 100%;
 }
 
-.navbar-header button {
-    margin-left: 50px;
-}
-
-.navbar-form {
-    padding: 2px;
-    margin-left: 20px;
+.form-group label {
+    color: darkgray;
+    padding-left: 20px;
 }
