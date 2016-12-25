@@ -11,6 +11,10 @@
     padding-left: 20px;
 }
 
+.navbar-form {
+    width: 100%;
+}
+
 .panel {
     -webkit-transition: box-shadow 0.6s;
     transition: box-shadow 0.6s;
@@ -20,4 +24,99 @@
     box-shadow: 0px 0px 20px 2px rgba(138,138,138,1);
     -webkit-transition: box-shadow 0.4s;
     transition: box-shadow 0.4s;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-footer .btn {
+    width: 45%;
+}
+
+.flex-container {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-container::before,
+.flex-container::after {
+    display: none;
+}
+
+.space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+}
+
+.panel-footer .container-fluid a {
+    text-decoration: none;
+}
+
+.lb-lg {
+    font-size: 18px;
+}
+
+.label .glyphicon {
+    font-size: 16px;
+}
+
+@media only screen and (min-width:992px) {
+    .panel-footer p:first-child {
+        display: none;
+    }
+
+    .panel-primary:hover .panel-footer p:first-child {
+        display: block;
+    }
+
+    .panel-primary:hover {
+        position: relative;
+        margin-bottom: -130px;
+    }
+
+    .panel-primary:hover .panel-footer {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .flex-container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .panel-footer .btn {
+        width: 100%;
+        font-size: 1.8em;
+    }
+    
+    .panel-footer .btn:last-child {
+        margin-top: 15px;
+    }
+    
+    .lb-lg {
+        font-size: 28px;
+    }
+    
+    .panel-footer .flex-container .glyphicon {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .panel-footer .flex-container .glyphicon {
+        font-size: 24px;
+    }
+    
+    .panel-footer .btn {
+        font-size: 1.6em;
+    }
 }
