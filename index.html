@@ -7,15 +7,16 @@
         <link rel="stylesheet" href="styles/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
         <title>Our Gallery</title>
     </head>
     <body>
         <header></header>
         <div id="gallery" class="container-fluid">
-            <nav class="navbare">
+            <nav class="navbar">
                 <div class="container-fluid">
                     <form class="navbar-form navbar-left">
-                        <div class="input-group col-md-9 col-sm-8">
+                        <div class="input-group col-xs-12 col-sm-8">
                             <input type="text" class="form-control" placeholder="Search">
                             <div class="input-group-btn">
                                 <button class="btn btn-default" type="submit">
@@ -23,13 +24,16 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group navbar-right">
                             <label for="sel1">Filter By: </label>
                             <select class="form-control" id="sel1">
-                                <option>Relevance</option>
-                                <option>Raiting</option>
-                                <option>Price</option>
-                                <option>Date</option>
+                                <option>Rating Highest First</option>
+                                <option>Rating Lowest First</option>
+                                <option>Price Highest First</option>
+                                <option>Price Lowest First</option>
+                                <option>Date Newest First</option>
+                                <option>Date Oldest First</option>
+                                <option selected>Relevance</option>
                             </select>
                         </div>
                     </form>
@@ -38,8 +42,8 @@
             
             <div class="row">
                 <div class="col-sm-8">
-                    <h2>Our Gallery Page</h2>
-                    <h4>Medium sub-header about our goods</h4>
+                    <h1>Our Gallery Page</h1>
+                    <h3>Medium sub-header about our goods</h3>
                 </div>
             </div>
             <div class="row">
@@ -49,7 +53,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -83,7 +90,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -106,7 +116,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -117,7 +127,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -140,7 +153,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -151,7 +164,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -174,145 +190,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-body">
-                            <img src="images/1.jpg" class="img-responsive" alt="img">
-                        </div>
-                        <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
-                            <p class="container-fluid flex-container space-between">
-                                <span class="label label-info lb-lg">300$</span>
-                                <span>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                </span>
-                            </p>
-                            <div class="container-fluid flex-container space-between">
-                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-body">
-                            <img src="images/1.jpg" class="img-responsive" alt="img">
-                        </div>
-                        <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
-                            <p class="container-fluid flex-container space-between">
-                                <span class="label label-info lb-lg">300$</span>
-                                <span>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                </span>
-                            </p>
-                            <div class="container-fluid flex-container space-between">
-                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-body">
-                            <img src="images/1.jpg" class="img-responsive" alt="img">
-                        </div>
-                        <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
-                            <p class="container-fluid flex-container space-between">
-                                <span class="label label-info lb-lg">300$</span>
-                                <span>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                </span>
-                            </p>
-                            <div class="container-fluid flex-container space-between">
-                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-body">
-                            <img src="images/1.jpg" class="img-responsive" alt="img">
-                        </div>
-                        <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
-                            <p class="container-fluid flex-container space-between">
-                                <span class="label label-info lb-lg">300$</span>
-                                <span>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </a>
-                                </span>
-                            </p>
-                            <div class="container-fluid flex-container space-between">
-                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -325,7 +203,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -348,7 +229,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -359,7 +240,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -382,7 +266,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -393,7 +277,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -416,7 +303,7 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>
@@ -427,7 +314,10 @@
                             <img src="images/1.jpg" class="img-responsive" alt="img">
                         </div>
                         <div class="panel-footer">
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
                                 <span class="label label-info lb-lg">300$</span>
                                 <span>
@@ -450,7 +340,157 @@
                             </p>
                             <div class="container-fluid flex-container space-between">
                                 <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
-                            <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <img src="images/1.jpg" class="img-responsive" alt="img">
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
+                            <p class="container-fluid flex-container space-between">
+                                <span class="label label-info lb-lg">300$</span>
+                                <span>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                </span>
+                            </p>
+                            <div class="container-fluid flex-container space-between">
+                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <img src="images/1.jpg" class="img-responsive" alt="img">
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
+                            <p class="container-fluid flex-container space-between">
+                                <span class="label label-info lb-lg">300$</span>
+                                <span>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                </span>
+                            </p>
+                            <div class="container-fluid flex-container space-between">
+                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <img src="images/1.jpg" class="img-responsive" alt="img">
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
+                            <p class="container-fluid flex-container space-between">
+                                <span class="label label-info lb-lg">300$</span>
+                                <span>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                </span>
+                            </p>
+                            <div class="container-fluid flex-container space-between">
+                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <img src="images/1.jpg" class="img-responsive" alt="img">
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+                            <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem quam officia blanditiis. Neque voluptatem atque, illo animi eaque ex.</p>
+                            <button type="button" onclick="showText(this)" class="btn btn-info btn-xs navbar-right">Show more...</button>
+                            <div class="clearfix"></div>
+                            <p class="container-fluid flex-container space-between">
+                                <span class="label label-info lb-lg">300$</span>
+                                <span>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </a>
+                                </span>
+                            </p>
+                            <div class="container-fluid flex-container space-between">
+                                <button type="button" class="btn btn-success btn-sm">Buy Now!</button>
+                                <button type="button" class="btn btn-primary btn-sm">Add to Cart!</button>
                             </div>
                         </div>
                     </div>

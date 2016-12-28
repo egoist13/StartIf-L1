@@ -8,11 +8,24 @@
 
 .form-group label {
     color: darkgray;
-    padding-left: 20px;
+}
+
+.navbar > .container-fluid {
+    padding: 0;
+}
+
+.navbar-form .input-group .input-group-btn {
+    width: 39px;
 }
 
 .navbar-form {
     width: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+
+.navbar-right {
+    margin: 0;
 }
 
 .panel {
@@ -30,10 +43,24 @@
     padding: 0;
 }
 
+.more {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.less {
+    white-space: wrap;
+    overflow: auto;
+}
+
+.clearfix {
+    margin-bottom: 10px;
+}
+
 .panel-footer .btn {
     width: 45%;
 }
-
 .flex-container {
     padding: 0;
     display: -webkit-box;
@@ -68,16 +95,18 @@
 }
 
 @media only screen and (min-width:992px) {
-    .panel-footer p:first-child {
+    /*.panel-footer p:nth-child(2) {
         display: none;
     }
 
-    .panel-primary:hover .panel-footer p:first-child {
+    .panel-primary:hover .panel-footer p:nth-child(2) {
         display: block;
     }
-
+*/
     .panel-primary:hover {
         position: relative;
+        /*margin-bottom: -130px;*/
+        
         margin-bottom: -130px;
     }
 
