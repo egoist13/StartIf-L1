@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 .form-group label {
     color: darkgray;
 }
@@ -101,11 +105,11 @@
 }
 
 @media only screen and (min-width:992px) {
-    
+/*    
     .row > .col-sm-6 {
         max-height: 361px;
     }
-    
+*/    
     .pagination {
         margin-top: 130px;
     }
