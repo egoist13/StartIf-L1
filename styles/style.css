@@ -104,6 +104,12 @@
     font-size: 16px;
 }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
 @media only screen and (min-width:992px) {
 /*    
     .row > .col-sm-6 {
