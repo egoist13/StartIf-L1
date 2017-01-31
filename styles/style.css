@@ -42,6 +42,8 @@ header {
 }
 
 .panel:hover {
+    position: relative;
+    z-index: 5;
     box-shadow: 0px 0px 20px 2px rgba(138,138,138,1);
     -webkit-transition: box-shadow 0.4s;
     transition: box-shadow 0.4s;
@@ -133,11 +135,6 @@ header {
 }
 
 @media only screen and (min-width:992px) {
-/*    
-    .row > .col-sm-6 {
-        max-height: 361px;
-    }
-*/    
     .pagination {
         margin-top: 130px;
     }

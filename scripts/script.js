@@ -1,4 +1,16 @@
 $(window).ready(function(){
+    function setRating(rating) {
+        var r = [];
+        for (var i = 1; i <= 5; i++, rating--) {
+            if (rating > 0) {
+                r.unshift("<span>&#9733;</span>");
+            } else {
+                r.unshift("<span>&#9734;</span>");
+            };
+        };
+        return r.join('');
+    };
+    
     var txt = '';
     for (i in gallery) {
         if ( (i % 4) === 1 ) {
@@ -14,9 +26,9 @@ $(window).ready(function(){
                             <p class="more">` + gallery[i].description + `</p>
                             <div class="clearfix"></div>
                             <p class="container-fluid flex-container space-between">
-                                <span class="label label-info lb-lg">300$</span>
+                                <span class="label label-info lb-lg">` + gallery[i].price + `$</span>
                                 <span class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    ` + setRating(gallery[i].rating) + `
                                 </span>
                             </p>
                             <div class="container-fluid flex-container space-between">
