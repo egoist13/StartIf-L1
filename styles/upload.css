@@ -1,0 +1,162 @@
+header {
+    padding: 0 100px;
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.droppable {
+    background-color: lightblue;
+    border: 5px dashed dodgerblue;
+    padding: 100px 0;
+    margin-right: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.droppable p {
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 36px; 
+    color: dodgerblue;
+}
+
+.input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+label,
+input,
+textarea,
+button {
+    width: 40%;
+    margin-bottom: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px; 
+    color: dodgerblue;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/*Modal Window Styles*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #a94464;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #f2dede;
+    color: #a94464;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+@media only screen and (max-width:991px) {
+    form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:662px) {
+    .wrapper {
+        width: 100%;
+    }
+    
+    .input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    label,
+    input,
+    textarea,
+    button {
+        width: 90%;
+    }
+}

@@ -1,0 +1,181 @@
+var gallery = {
+  "10": {
+    "name": "Obcaecati nostrum deserunt inventore tempore",
+    "description": "Eos cumque laudantium impedit repudiandae, ipsa quia maxime.",
+    "rating": 5,
+    "price": 270
+  },
+  "11": {
+    "name": "Optio illum ab vel eaque quia dolor sit amet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "rating": 4,
+    "price": 320
+  },
+  "12": {
+    "name": "Maiores quisquam iste quidem quam saepe suscipit",
+    "description": "Delectus esse soluta! Repellendus saepe suscipit sapiente, sit omnis odit cum ipsam.",
+    "rating": 3,
+    "price": 250
+  },
+  "13": {
+    "name": "Maiores quisquam iste quidem quam voluptate sapiente",
+    "description": "Eligendi fugiat provident dolore, temporibus dolor placeat voluptas a voluptate sapiente rerum quos.",
+    "rating": 5,
+    "price": 240
+  },
+  "14": {
+    "name": "Impedit nisi cumque, qui maiores consequuntur",
+    "description": "Unde commodi omnis architecto cupiditate accusantium doloribus beatae sed nihil.",
+    "rating": 3,
+    "price": 230
+  },
+  "15": {
+    "name": "Lexcepturi eius possimus quas ut voluptatem",
+    "description": "Ipsam voluptate totam. Praesentium dicta assumenda magnam culpa!",
+    "rating": 5,
+    "price": 210
+  },
+  "16": {
+    "name": "Iure ad accusamus deserunt illum consequuntur architecto",
+    "description": "Iure ad accusamus deserunt illum ut voluptatem perspiciatis eos assumenda.",
+    "rating": 4,
+    "price": 220
+  },
+  "17": {
+    "name": "Voluptatem perspiciatis eos assumenda maiores",
+    "description": "Impedit nisi cumque, qui maiores consequuntur architecto distinctio dolorem optio maxime consequatur, excepturi eius possimus quas.",
+    "rating": 5,
+    "price": 285
+  },
+  "18": {
+    "name": "Praesentium dicta assumenda magnam culpa quisquam iste",
+    "description": "Optio illum ab vel eaque quia. Maiores quisquam iste quidem quam consequatur facilis inventore adipisci minima.",
+    "rating": 5,
+    "price": 260
+  },
+  "19": {
+    "name": "Unde commodi omnis architecto cupiditate ducimus",
+    "description": "Obcaecati nostrum deserunt inventore tempore sapiente ducimus alias nemo, ea libero, minus odit.",
+    "rating": 4,
+    "price": 240
+  },
+  "20": {
+    "name": "E ligendi fugiat provident dolorenull repellat harum",
+    "description": "Est ipsam voluptatibus mollitia, repellat harum officiis reiciendis exercitationem sit amet delectus quasi quaerat?",
+    "rating": 3,
+    "price": 300
+  },
+  "21": {
+    "name": "Lconsectetur adipisicing elit repellat harum officiis",
+    "description": "Est ipsam voluptatibus mollitia, repellat harum officiis reiciendis exercitationem sit amet delectus quasi quaerat?",
+    "rating": 4,
+    "price": 175
+  },
+  "22": {
+    "name": "Est ipsam voluptatibus mollitia inventore tempore sapiente",
+    "description": "Obcaecati nostrum deserunt inventore tempore sapiente ducimus alias nemo, ea libero, minus odit.",
+    "rating": 3,
+    "price": 265
+  },
+  "23": {
+    "name": "Obcaecati nostrum deserunt inventore tempore quisquam",
+    "description": "Optio illum ab vel eaque quia. Maiores quisquam iste quidem quam consequatur facilis inventore adipisci minima.",
+    "rating": 4,
+    "price": 325
+  },
+  "24": {
+    "name": "Optio illum ab vel eaque quia consequuntur architecto",
+    "description": "Impedit nisi cumque, qui maiores consequuntur architecto distinctio dolorem optio maxime consequatur, excepturi eius possimus quas.",
+    "rating": 5,
+    "price": 235
+  },
+  "25": {
+    "name": "Maiores quisquam iste quidem quam illum ut voluptatem",
+    "description": "Iure ad accusamus deserunt illum ut voluptatem perspiciatis eos assumenda.",
+    "rating": 4,
+    "price": 320
+  },
+  "26": {
+    "name": "Impedit nisi cumque, qui maiores consequuntur dicta",
+    "description": "Ipsam voluptate totam. Praesentium dicta assumenda magnam culpa!",
+    "rating": 3,
+    "price": 215
+  },
+  "27": {
+    "name": "Lexcepturi eius possimus quas cupiditate accusantium",
+    "description": "Unde commodi omnis architecto cupiditate accusantium doloribus beatae sed nihil.",
+    "rating": 3,
+    "price": 290
+  },
+  "28": {
+    "name": "Iure ad accusamus deserunt illum temporibus dolor placeat",
+    "description": "Eligendi fugiat provident dolore, temporibus dolor placeat voluptas a voluptate sapiente rerum quos.",
+    "rating": 5,
+    "price": 370
+  },
+  "29": {
+    "name": "Voluptatem perspiciatis eos assumenda suscipit sapiente",
+    "description": "Delectus esse soluta! Repellendus saepe suscipit sapiente, sit omnis odit cum ipsam.",
+    "rating": 3,
+    "price": 290
+  },
+  "1": {
+    "name": "Praesentium dicta assumenda magnam culpa ipsa quia",
+    "description": "Eos cumque laudantium impedit repudiandae, ipsa quia maxime.",
+    "rating": 4,
+    "price": 360
+  },"2": {
+    "name": "Illo sequi pariatur dignissimos, natus, rem dolorum",
+    "description": "Provident ipsum voluptates quis laborum itaque iusto reiciendis nesciunt, impedit iste earum quas in ullam, saepe numquam odit, assumenda magni, distinctio magnam!",
+    "rating": 4,
+    "price": 360
+  },
+  "3": {
+    "name": "E ligendi fugiat provident dolorenull voluptates illo",
+    "description": "Commodi soluta architecto cum libero voluptates illo sequi pariatur dignissimos, natus, rem dolorum nostrum deserunt deleniti, aspernatur minima molestiae asperiores, sed ducimus doloribus mollitia repellat facilis sunt placeat minus.",
+    "rating": 4,
+    "price": 350
+  },
+  "4": {
+    "name": "Delectus esse soluta ab dolorem veritatis distinctio",
+    "description": "Dignissimos, ex voluptatum eligendi non ab dolorem veritatis distinctio consequuntur atque assumenda dolor soluta, doloribus quaerat velit nesciunt officia minus, quibusdam corporis magnam odit illum?",
+    "rating": 3,
+    "price": 270
+  },
+  "5": {
+    "name": "Repellendus saepe suscipit sapiente ipsum voluptates",
+    "description": "Necessitatibus molestiae provident ipsum voluptates quis laborum itaque iusto reiciendis nesciunt, impedit iste earum quas in ullam, saepe numquam odit, assumenda magni, distinctio magnam!",
+    "rating": 5,
+    "price": 520
+  },
+  "6": {
+    "name": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "description": "Sunt ipsum quaerat expedita distinctio alias tenetur sed, ullam sint excepturi facilis quae odio doloremque iure illo magni in sit itaque accusantium earum eos, iusto vitae.",
+    "rating": 5,
+    "price": 350
+  },
+  "7": {
+    "name": "Eos cumque laudantium impedit repudiandae",
+    "description": "A, magnam saepe pariatur recusandae sapiente veritatis quaerat hic omnis modi dolor dolore eligendi provident ullam nisi mollitia molestiae libero id qui amet error facere ipsam quas asperiores repellat tenetur.",
+    "rating": 3,
+    "price": 220
+  },
+  "8": {
+    "name": "Lconsectetur adipisicing elit optio dolores",
+    "description": "Culpa dolorum neque enim vel repudiandae, veritatis optio dolores, repellendus deleniti perferendis quidem aliquam fugit ratione sunt dolore illo rerum sed odio totam reiciendis pariatur fuga! Facilis, autem earum in.",
+    "rating": 5,
+    "price": 240
+  },
+  "9": {
+    "name": "Est ipsam voluptatibus mollitia dolore nihil",
+    "description": "Quaerat error dicta doloremque dolore nihil. Porro omnis fugiat non nam voluptates rerum ipsa atque quia ea, eaque totam ad molestiae nesciunt iste consequatur quibusdam voluptate harum odit minus debitis, ipsam doloribus minima facere?",
+    "rating": 4,
+    "price": 260
+  },
+  "30": {
+    "name": "Unde commodi omnis architecto cupiditate",
+    "description": "Earum incidunt aspernatur suscipit ducimus, eum omnis placeat ipsam quis modi beatae nam numquam amet in sint, facere deleniti tempore excepturi.",
+    "rating": 3,
+    "price": 265
+  },
+};
